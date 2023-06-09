@@ -1,6 +1,6 @@
-# kafka-various-lang
+# kafka
 
-Interacting with Kafka with a bunch of languages
+Using kafka with a bunch of different languages
 
 ## Gettings started
 - open a terminal and run `docker-compose up`
