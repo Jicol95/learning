@@ -7,6 +7,7 @@ Using kafka with a bunch of different languages
 - open another terminal and navigate to `rust-consumer` and run `cargo run`, this will start the rust consumer
 - open another terminal and navigate to `go-consumer` and run `go run .` this will start the go consumer
 - open another terminal and navigate to `dotnet-consumer/dotnet-consumer` and run `dotnet run` this will start the dotnet consumer
+-- open another terminal and navigate to `fsharp-consumer/fsharp-consumer` and run `dotnet run` this will start the dotnet consumer
 - open another terminal and navigate to `rust-producer` and run `cargo run`, this will produce one message
 
 ## components
@@ -18,6 +19,12 @@ A sample rust kafka consumer using rust-kafka which polls the topic `producer-te
 
 ### go-consumer
 A sample go kafka consumer using confluent-kafka-go which polls the topic `producer-test-command` and prints each message
+
+### dotnet-consumer
+A sample C# kafka consumer using confluent kafka which poll the topic `producer-test-command` and prints each message
+
+### fsharp-consumer
+A sample F# kafka consumer using confluent kafka which poll the topic `producer-test-command` and prints each message
 
 ### rust-producer
 A sample kafka producer using rust kafka which produces messages to the topic `producer-test-command`

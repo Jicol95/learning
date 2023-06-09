@@ -7,7 +7,7 @@ fn main() {
         Consumer::from_hosts(vec!("localhost:9092".to_owned()))
             .with_topic("producer-test-command".to_owned())
             .with_fallback_offset(FetchOffset::Earliest)
-            .with_group("my-group".to_owned())
+            .with_group("rust-consumer".to_owned())
             .with_offset_storage(GroupOffsetStorage::Kafka)
             .create()
             .unwrap();
