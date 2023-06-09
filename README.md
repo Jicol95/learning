@@ -1,4 +1,6 @@
-# rust-kafka-demo
+# kafka-various-lang
+
+Interacting with Kafka with a bunch of languages
 
 ## Gettings started
 - open a terminal and run `docker-compose up`
