@@ -5,3 +5,5 @@ This repo contains a bunch of playground files for learning different topics. So
 - Message Brokers
   - Kafka
   - RabbitMQ
+- Parsers
+  - Key Value parsing (fparser)
