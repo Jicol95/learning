@@ -94,13 +94,6 @@ let pskipchar ch = parser {
         return! pfail ()
 }
 
-let padd = parser {
-    let! left = pint
-    do! pskipchar '+'
-    let! right = pint
-    return left + right
-}
-
 let pstring (t : Parser<char>) : Parser<string> =
     pmany1 t |> pmap (fun charList -> charList |> List.toArray |> String)
 
@@ -123,8 +116,7 @@ let pkeyvalues = parser {
 }
 
 [<EntryPoint>]
-let main argv =
-    prun padd "4+2" |> printfn "%A"
+let main _ =
     prun pkeyvalues """dockerPort=8080
         postgresPort=5045
         universe=42
